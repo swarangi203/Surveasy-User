@@ -118,9 +118,11 @@ public class HomeActivity extends AppCompatActivity {
                 FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(HomeActivity.this, MainActivity.class);
                 startActivity(intent);
-                finish();
+                
             }
         });
+        
+        
         postqueries.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
